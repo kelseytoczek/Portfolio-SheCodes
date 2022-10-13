@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #9d7575;
+  --secondary-color: #cebaba;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font-family: "Arsenal", sans-serif;
 }
 
 body {
@@ -10,21 +11,34 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 120px;
+  font-family: "Arsenal", sans-serif;
 }
 
 h2 {
   font-size: 48px;
+  font-family: var(--heading-font-family);
 }
 
 h3 {
-  font-size: 24px;
-  opacity: 0.7;
+  font-family: "Arsenal", sans-serif;
+  font-size: 50px;
+}
+
+h4 {
+  font-family: "Arsenal", sans-serif;
+  font-size: 100px;
+}
+h5 {
+  color: rgba(0, 0, 0, 0.697);
+  font-style: italic;
 }
 
 p {
@@ -37,38 +51,44 @@ p {
   margin-top: 40px;
   justify-content: center;
 }
-
-.navigation-links a {
-  margin: 20px;
-}
-
-.primary-link {
+.contact-link {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
-  text-transform: capitalize;
   background: var(--primary-color);
-  box-shadow: var(--box-shadow);
+  border: 1px solid var(--primary-color);
   color: white;
+  font-size: 20px;
+  margin: 30px;
+}
+.contact-link:hover {
+  color: #9d7575;
+  background: white;
+  border: 1px solid var(--primary-color);
+  transition: all 100ms ease-in-out;
 }
 
-.primary-link:hover {
-  color: white;
+.project-link {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
 }
-
-.secondary-link {
+.project-link {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  max-width: 400px;
+  background: var(--primary-color);
+  color: white;
+  font-size: 20px;
 }
 
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
+.project-link:hover {
+  color: #9d7575;
+  background: white;
+  border: 1px solid var(--primary-color);
+  padding: 20px 15px;
+  transition: all 100ms ease-in-out;
 }
 
 .about-paragraphs {
@@ -106,9 +126,139 @@ p {
     text-align: center;
   }
 
+  .tool-list {
+    display: none;
+  }
+
   .project-link {
     display: block;
     text-align: center;
     margin: 0 20px;
   }
+}
+.hero {
+  text-align: left;
+  padding: 140px 100px;
+}
+.logo {
+  max-width: 130px;
+}
+
+.nav-item {
+  padding: 0 10px;
+  line-height: 14px;
+}
+
+.nav a {
+  transition: all 100ms ease-in-out;
+}
+.nav-link {
+  color: white;
+}
+.navbar-toggler {
+  color: white;
+  background-color: white;
+}
+.nav-link:hover {
+  background-color: white;
+  color: #9d7575;
+}
+
+.container-fluid {
+  background-color: #9d7575;
+}
+
+.hero {
+  background: white;
+  text-align: center;
+  line-height: 1.5;
+  padding: 40px 15px;
+}
+.index-img {
+  border-radius: 110px;
+  border: solid 5px var(--primary-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+span {
+  font-size: 48px;
+}
+
+.font::before {
+  content: " ";
+  animation: animate infinite 15s;
+}
+
+@keyframes animate {
+  0% {
+    content: "cat lover";
+  }
+  20% {
+    content: "front-end web developer";
+  }
+  40% {
+    content: "technical writer & trainer";
+  }
+  60% {
+    content: "learning & development specialist";
+  }
+  80% {
+    content: "customs brokerage specialist";
+  }
+  100% {
+    content: "photographer";
+  }
+}
+footer .contact-box {
+  display: block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px 120px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  align-items: normal;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: var(--paragraph-color);
+  font-size: 24px;
+  text-align: center;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: white;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 30px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--secondary-color);
+  background-color: var(--branding-color);
+}
+
+.social-links-contact a {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
+  font-size: 20px;
+  margin: 0 20px;
+}
+.tool-list {
+  color: #9d7575;
+  font-size: 40px;
 }
