@@ -36,14 +36,17 @@ h4 {
   font-family: "Arsenal", sans-serif;
   font-size: 100px;
 }
-h5 {
-  color: rgba(0, 0, 0, 0.697);
-  font-style: italic;
-}
 
 p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.location {
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: italic;
+  font-family: monospace;
 }
 
 .navigation-links {
@@ -208,52 +211,35 @@ span {
     content: "photographer";
   }
 }
-footer .contact-box {
-  display: block;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 30px 120px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: normal;
-  align-items: normal;
-}
 
-footer .contact-box p {
-  margin: 0;
-}
-
-footer .email-link {
+.email-link {
   text-decoration: none;
-  color: var(--paragraph-color);
+  color: #9d7575;
   font-size: 24px;
   text-align: center;
 }
 
-footer .email-link:hover {
-  color: var(--branding-color);
+.email-link:hover {
+  color: #cebaba;
+  text-decoration: none;
 }
 
 footer .social-links a {
   margin: 0 20px;
   color: white;
   background-color: var(--secondary-color);
-  border-radius: 50%;
+  border-radius: 100%;
   padding: 10px 15px;
   font-size: 30px;
   transition: all 100ms ease-in-out;
 }
 
 footer .social-links a:hover {
-  color: var(--secondary-color);
-  background-color: var(--branding-color);
+  color: #cebaba;
+  background-color: white;
 }
 
 .social-links-contact a {
-  color: var(--branding-color);
   transition: all 100ms ease-in-out;
   font-size: 20px;
   margin: 0 20px;
