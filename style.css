@@ -12,28 +12,24 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   margin: 0;
+  font-family: var(--heading-font-family);
 }
 
 h1 {
   font-size: 120px;
-  font-family: "Arsenal", sans-serif;
 }
 
 h2 {
   font-size: 48px;
-  font-family: var(--heading-font-family);
 }
 
 h3 {
-  font-family: "Arsenal", sans-serif;
   font-size: 50px;
 }
 
 h4 {
-  font-family: "Arsenal", sans-serif;
   font-size: 100px;
 }
 
@@ -65,7 +61,7 @@ p {
   margin: 30px;
 }
 .contact-link:hover {
-  color: #9d7575;
+  color: var(--primary-color);
   background: white;
   border: 1px solid var(--primary-color);
   transition: all 100ms ease-in-out;
@@ -75,8 +71,6 @@ p {
   display: flex;
   margin-top: 40px;
   justify-content: center;
-}
-.project-link {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -87,7 +81,7 @@ p {
 }
 
 .project-link:hover {
-  color: #9d7575;
+  color: var(--primary-color);
   background: white;
   border: 1px solid var(--primary-color);
   padding: 20px 15px;
@@ -100,18 +94,6 @@ p {
 
 .about-paragraphs p {
   margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 576px) {
@@ -128,10 +110,15 @@ p {
   p {
     text-align: center;
   }
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
 
   .tool-list {
     display: none;
   }
+
   .contact-link {
     display: block;
     text-align: center;
@@ -168,11 +155,11 @@ p {
 }
 .nav-link:hover {
   background-color: white;
-  color: #9d7575;
+  color: var(--primary-color);
 }
 
 .container-fluid {
-  background-color: #9d7575;
+  background-color: var(--primary-color);
 }
 
 .hero {
@@ -186,6 +173,12 @@ p {
   border: solid 5px var(--primary-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+.img-fluid {
+  border-radius: 110px;
+  border: solid 5px var(--primary-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 span {
   font-size: 48px;
 }
@@ -217,15 +210,15 @@ span {
 }
 
 .email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
   text-decoration: none;
-  color: #9d7575;
   font-size: 24px;
-  text-align: center;
 }
 
 .email-link:hover {
-  color: #cebaba;
-  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 footer .social-links a {
@@ -239,7 +232,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: #cebaba;
+  color: var(--secondary-color);
   background-color: white;
 }
 
@@ -249,6 +242,23 @@ footer .social-links a:hover {
   margin: 0 20px;
 }
 .tool-list {
-  color: #9d7575;
+  color: var(--primary-color);
   font-size: 40px;
+}
+.btn a {
+  padding: 14px 28px;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  line-height: 27px;
+  display: flex;
+  justify-content: center;
+}
+.btn a:hover {
+  padding: 14px 28px;
+  background: white;
+  color: var(--primary-color);
+  text-decoration: none;
+  border: 1px solid var(--primary-color);
 }
