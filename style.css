@@ -284,3 +284,6 @@ footer .social-links a:hover {
   text-decoration: none;
   border: 1px solid var(--primary-color);
 }
+.col-sm-6 {
+  padding: 20px;
+}
